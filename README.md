@@ -30,6 +30,36 @@ sudo apt upgrade
 sudo apt install -y build-essential linux-headers-$(uname -r) kmod
 ```
 
+#### get module info
+
+```bash
+modinfo <module_name>.ko
+```
+
+#### load module
+
+```bash
+sudo insmod <module_name>.ko
+```
+
+#### unload module
+
+```bash
+sudo rmmod <module_name>
+```
+
+#### check module
+
+```bash
+lsmod | grep <module_name>
+```
+
+#### check dmesg
+
+```bash
+dmesg | tail
+```
+
 Referências:
 
 - [https://www.kernel.org/doc/html/latest/driver-api/index.html](https://www.kernel.org/doc/html/latest/driver-api/index.html)
