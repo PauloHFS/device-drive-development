@@ -14,13 +14,21 @@ Passos do Projeto
 
 5. Testes e Logs: Utilize o comando dmesg para depurar e verificar os logs gerados pelo driver ao ser carregado, lido e escrito.
 
-Ambiente de Desenvolvimento
+## Ambiente de Desenvolvimento
 
 - Ubuntu Server
 - Virtual Box
 - Visual Studio Code
 - Build Essentials
 - Linux Headers
+
+### Util
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install -y build-essential linux-headers-$(uname -r) kmod
+```
 
 Referências:
 
